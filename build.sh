@@ -9,5 +9,7 @@ do
   gitbook install
   gitbook build
   mv _book "$rootpath/${file}"
+  rm -f book.json
+  rm -rf node_modules
   echo "-----${file}文档编译部署成功-----"
 done
