@@ -1,0 +1,428 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>查询 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="编辑器.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="查询.html">
+            
+                <a href="查询.html">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="编辑器.html">
+            
+                <a href="编辑器.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >查询</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="cpu&#x67E5;&#x8BE2;">cpu&#x67E5;&#x8BE2;</h2>
+<p>top</p>
+<pre><code>Tasks: 139 total,   1 running, 137 sleeping,   1 stopped,   0 zombie
+
+%Cpu(s):  3.4 us,  0.9 sy,  0.0 ni, 95.6 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
+
+KiB Mem :  8171896 total,   232032 free,  1512068 used,  6427796 buff/cache
+
+KiB Swap:  4194300 total,  4190964 free,     3336 used.  6290840 avail Mem
+</code></pre><p>top&#x547D;&#x4EE4;&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x7684;&#x5185;&#x5B58;&#x5360;&#x7528;&#x7387;</p>
+<p>%Cpu(s)&#x4E00;&#x884C;&#x5C31;&#x662F;cpu&#x7684;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#xFF0C;us&#x662F;&#x6307;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x7A0B;&#x5E8F;&#x7684;cpu&#x4F7F;&#x7528;&#x7387;&#xFF0C;sy&#x662F;&#x6307;&#x7CFB;&#x7EDF;&#x7A7A;&#x95F4;&#x5185;&#x6838;&#x7A0B;&#x5E8F;&#x7684;cpu&#x4F7F;&#x7528;&#x7387;&#x3002;id&#x662F;&#x7A7A;&#x95F2;cpu</p>
+<p>top&#x547D;&#x4EE4;&#x540C;&#x6837;&#x53EF;&#x67E5;&#x5185;&#x5B58;&#xFF0C;&#x4E0D;&#x8FC7;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x66F4;&#x4E60;&#x60EF;&#x7528;<code>free -h</code></p>
+<h2 id="&#x5185;&#x5B58;&#x67E5;&#x8BE2;">&#x5185;&#x5B58;&#x67E5;&#x8BE2;</h2>
+<p>free -h</p>
+<p>free&#x547D;&#x4EE4;&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x72B6;&#x51B5;&#xFF0C;&#x5E26;-h&#x53C2;&#x6570;&#x4EE5;&#x4EBA;&#x7C7B;&#x6613;&#x8BFB;&#x7684;GB&#x3001;MB&#x3001;KB&#x4E3A;&#x5355;&#x4F4D;&#x663E;&#x793A;</p>
+<pre><code>              total        used        free      shared  buff/cache   available
+Mem:           344M         87M         47M        5.4M        208M        224M
+Swap:          255M        125M        130M
+</code></pre><h2 id="&#x78C1;&#x76D8;&#x67E5;&#x8BE2;">&#x78C1;&#x76D8;&#x67E5;&#x8BE2;</h2>
+<p>df -h </p>
+<p>df&#x662F;&#x5217;&#x51FA;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x6574;&#x4F53;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x3002;&#x4F46;&#x662F;&#x5355;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5217;&#x51FA;&#x6765;&#x7684;&#x5BB9;&#x91CF;&#x662F;&#x4EE5;1KB&#x4E3A;&#x5355;&#x4F4D;,&#x975E;&#x5E38;&#x62BD;&#x8C61;&#x3002;&#x6211;&#x4EEC;&#x540C;&#x6837;&#x5E26;<code>-h</code></p>
+<pre><code>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;                 &#x5BB9;&#x91CF;  &#x5DF2;&#x7528;  &#x53EF;&#x7528; &#x5DF2;&#x7528;% &#x6302;&#x8F7D;&#x70B9;
+
+/dev/mapper/centos-root   55G   15G   41G   27% /
+
+devtmpfs                 3.9G     0  3.9G    0% /dev
+
+tmpfs                    3.9G     0  3.9G    0% /dev/shm
+
+tmpfs                    3.9G   33M  3.9G    1% /run
+
+tmpfs                    3.9G     0  3.9G    0% /sys/fs/cgroup
+
+/dev/sda1               1014M  133M  882M   14% /boot
+
+tmpfs                    799M     0  799M    0% /run/user/0
+</code></pre><h2 id="&#x6587;&#x4EF6;&#x67E5;&#x8BE2;">&#x6587;&#x4EF6;&#x67E5;&#x8BE2;</h2>
+<p>ls&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;</p>
+<p>ls -a &#x663E;&#x793A;&#x6240;&#x6709;&#x6587;&#x4EF6;&#xFF08;&#x5305;&#x62EC;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#xFF09;</p>
+<p>ls -l &#x5E26;&#x4E0A;-l&#x53C2;&#x6570;&#xFF0C;&#x8FD8;&#x4F1A;&#x5C06;&#x6587;&#x4EF6;&#x7684;&#x6743;&#x9650;&#x3001;&#x6240;&#x6709;&#x8005;&#x3001;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x7B49;&#x4FE1;&#x606F;&#x8BE6;&#x7EC6;&#x5217;&#x51FA;&#x6765;&#x3002;</p>
+<p>&#x540C;free -h &#x548C; df -h&#xFF0C;&#x53EF;&#x4EE5;ls -lh&#xFF0C;&#x8FD9;&#x6837;&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x5C31;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;</p>
+<p>ls -lh</p>
+<pre><code>&#x603B;&#x7528;&#x91CF; 3.7G
+
+-rw-r--r-- 1 blocface blocface 3.0G 7&#x6708;  19 17:59 blocface-centos7-0719.tar.gz
+
+drwxr-xr-x 3 blocface blocface   21 7&#x6708;  20 10:22 centos7
+
+-rwxrwxrwx 1 blocface blocface 152M 7&#x6708;  20 10:22 console.tar.gz
+
+drwxr-xr-x 8 blocface blocface   97 7&#x6708;  20 10:29 deploy
+
+-rwxrwxrwx 1 blocface blocface  17M 7&#x6708;  20 10:14 etcd-2.tar.gz
+
+-rwxrwxrwx 1 blocface blocface  18M 7&#x6708;  20 10:15 hostagent.tar.gz
+
+-rwxrwxrwx 1 blocface blocface  16M 7&#x6708;  20 10:15 minio-3.tar.gz
+
+-rwxrwxrwx 1 blocface blocface 471M 7&#x6708;  20 10:15 third-1.tar.gz
+</code></pre><p>&#x6B64;&#x5916;&#xFF0C;Linux&#x6709;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;<code>md5sum</code>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;&#x6587;&#x4EF6;&#x7684;md5&#x503C;&#xFF0C;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;&#x800C;&#x4E14;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x540D;&#x662F;&#x4E0D;&#x6539;&#x53D8;&#x6587;&#x4EF6;&#x7684;md5&#x503C;&#x7684;</p>
+<h2 id="&#x8FDB;&#x7A0B;&#x67E5;&#x8BE2;">&#x8FDB;&#x7A0B;&#x67E5;&#x8BE2;</h2>
+<p>ps -aux</p>
+<p>&#x663E;&#x793A;&#x7EC8;&#x7AEF;&#x4E0B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#xFF0C;&#x4E14;&#x663E;&#x793A;&#x7684;&#x4FE1;&#x606F;&#x6BD4;&#x8F83;&#x5B8C;&#x6574;&#x3002;&#xFF08;&#x8868;&#x5934;&#x5305;&#x62EC;USER&#x3001;PID&#x3001;CPU&#x548C;&#x5185;&#x5B58;&#x7684;&#x5360;&#x7528;&#x7387;&#x3001;&#x8D77;&#x59CB;&#x65F6;&#x95F4;&#x3001;&#x547D;&#x4EE4;&#xFF09;</p>
+<pre><code>USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+
+root         1  0.0  0.0  51824  3384 ?        Ss   6&#x6708;04   2:05 /usr/lib/syste
+</code></pre><h2 id="&#x7F51;&#x7EDC;&#x67E5;&#x8BE2;">&#x7F51;&#x7EDC;&#x67E5;&#x8BE2;</h2>
+<p>netstat -a</p>
+<p>(a&#x53C2;&#x6570;&#x663E;&#x793A;&#x6240;&#x6709;socket)</p>
+<pre><code>Active Internet connections (including servers)
+
+Proto Recv-Q Send-Q  Local Address          Foreign Address        (state)    
+
+tcp4      51      0  localhost.54530        localhost.61109        ESTABLISHED
+
+tcp4       0      0  localhost.61109        localhost.54530        ESTABLISHED
+
+tcp4       0      0  10.1.40.143.61033      tsa01s09-in-f10..https SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61027      tsa01s09-in-f10..https SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61023      tsa01s09-in-f10..https SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61019      103.214.168.106.https  SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61018      180.163.151.166.https  ESTABLISHED
+
+tcp4       0      0  10.1.40.143.61017      180.163.151.166.https  ESTABLISHED
+
+tcp4       0      0  10.1.40.143.61012      tsa01s09-in-f10..https SYN_SENT
+</code></pre><p>netstat -an</p>
+<p>(n&#x53C2;&#x6570;&#x8868;&#x793A;&#x8FDE;&#x63A5;&#x7684;&#x5730;&#x5740;&#x76F4;&#x63A5;&#x4F7F;&#x7528;ip&#x5730;&#x5740;)</p>
+<pre><code>Active Internet connections (including servers)
+
+Proto Recv-Q Send-Q  Local Address          Foreign Address        (state)    
+
+tcp4       0      0  127.0.0.1.61300        127.0.0.1.61301        ESTABLISHED
+
+tcp4       0      0  127.0.0.1.61301        127.0.0.1.61300        ESTABLISHED
+
+tcp4       0      0  10.1.40.143.61298      59.82.33.251.443       ESTABLISHED
+
+tcp4       0      0  10.1.40.143.61227      216.58.200.42.443      SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61223      216.58.200.42.443      SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61218      216.58.200.42.443      SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61211      216.58.200.42.443      SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61207      216.58.200.42.443      SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61203      216.58.200.42.443      SYN_SENT   
+
+tcp4       0      0  10.1.40.143.61018      180.163.151.166.443    ESTABLISHED
+
+tcp4       0      0  10.1.40.143.61017      180.163.151.166.443    ESTABLISHED
+
+tcp4       0      0  10.1.40.143.61011      180.163.150.166.443    ESTABLISHED
+</code></pre><p>netstat -anp</p>
+<p>p&#x53C2;&#x6570;&#x663E;&#x793A;&#x8BE5;socket&#x8FDE;&#x63A5;&#x5BF9;&#x5E94;&#x7684;&#x8FDB;&#x7A0B;(&#x5305;&#x62EC;pid&#x548C;&#x8FDB;&#x7A0B;&#x540D;&#xFF09;&#x3002;</p>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x6709;&#x975E;&#x5E38;&#x5E38;&#x89C1;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x7ECF;&#x5E38;&#x8DDF;<code>| grep &lt;&#x7AEF;&#x53E3;&#x53F7;&gt;</code>&#xFF0C;&#x627E;&#x5230;&#x5360;&#x7528;&#x8BE5;&#x7AEF;&#x53E3;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x5C06;&#x5176;kill&#x6389;&#x3002;</p>
+<p>&#x5173;&#x4E8E;kill&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x8BF4;&#x7684;&#x5C31;&#x662F;&#xFF0C;&#x6709;&#x4E9B;&#x8FDB;&#x7A0B;kill pid&#x65E0;&#x6548;&#xFF0C;&#x9700;&#x8981;kill -9 9&#x662F;&#x5F3A;&#x5236;&#x7EC8;&#x6B62;&#x4FE1;&#x53F7;&#xFF0C;&#x7ACB;&#x5373;&#x7EC8;&#x6B62;&#x8FD0;&#x884C;&#xFF0C;&#x4E0D;&#x4F1A;&#x88AB;&#x963B;&#x585E;&#x3002;&#x4F46;&#x662F;&#x4E5F;&#x56E0;&#x6B64;kill -9&#x4E0D;&#x662F;&#x5B89;&#x5168;&#x9000;&#x51FA;&#xFF0C;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x4E00;&#x4E9B;&#x810F;&#x6570;&#x636E;&#x6216;&#x5F02;&#x5E38;&#xFF09;</p>
+<pre><code>Active Internet connections (servers and established)
+
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+
+tcp        0      0 172.22.66.86:9000       0.0.0.0:*               LISTEN      16325/minio.RELEASE 
+
+tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      15779/mysqld        
+
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      3618/sshd           
+
+tcp        0      0 0.0.0.0:10080           0.0.0.0:*               LISTEN      18523/nginx: master 
+
+tcp        0      0 0.0.0.0:18081           0.0.0.0:*               LISTEN      18523/nginx: master 
+
+tcp        0      0 172.22.66.86:5222       0.0.0.0:*               LISTEN      15942/nats-server   
+
+tcp        0      0 172.22.66.86:18081      10.1.41.111:56128       TIME_WAIT   -                   
+
+tcp        0      0 172.22.66.86:48734      172.22.66.205:2380      TIME_WAIT   -                   
+
+tcp        0      0 172.22.66.86:9000       172.22.66.205:56378     ESTABLISHED 16325/minio.RELEASE 
+
+tcp        0      0 127.0.0.1:58964         127.0.0.1:9090          ESTABLISHED 15993/prometheus    
+
+tcp        0      0 172.22.66.86:59716      172.22.66.253:8015      ESTABLISHED 15550/blocface-host 
+
+tcp        0      0 172.22.66.86:3306       172.22.66.237:43130     ESTABLISHED 15779/mysqld
+</code></pre><h2 id="&#x65E5;&#x5FD7;&#x67E5;&#x770B;">&#x65E5;&#x5FD7;&#x67E5;&#x770B;</h2>
+<p>&#x67E5;&#x770B;&#x5B8C;&#x6574;&#x6587;&#x4EF6;</p>
+<p>cat &lt;&#x6587;&#x4EF6;&#x540D;&gt;</p>
+<p><br></p>
+<p>&#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x524D;20&#x884C;</p>
+<p>head -20 &lt;&#x6587;&#x4EF6;&#x540D;&gt;</p>
+<p><br></p>
+<p>tail&#x9ED8;&#x8BA4;&#x8BFB;&#x6587;&#x4EF6;&#x672B;&#x5C3E;10&#x884C;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x5E26;&#x4E0A;-f&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x4E0D;&#x65AD;&#x5237;&#x65B0;&#x5185;&#x5BB9;&#xFF0C;&#x67E5;&#x9605;&#x6B63;&#x5728;&#x6539;&#x53D8;&#x7684;&#x6587;&#x4EF6;&#xFF08;&#x5B9E;&#x65F6;&#x8BFB;&#x53D6;&#x6700;&#x65B0;&#x5185;&#x5BB9;&#xFF09;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x53D8;&#x64CD;&#x4F5C;&#x53D8;&#x770B;&#x65E5;&#x5FD7;&#xFF0C;&#x5B9E;&#x65F6;&#x6392;&#x67E5;&#x7A0B;&#x5E8F;&#x51FA;&#x9519;&#x5728;&#x54EA;&#x91CC;</p>
+<p>tail -f &lt;&#x6587;&#x4EF6;&#x540D;&gt;</p>
+<p><br></p>
+<p>&#x5982;&#x679C;&#x60F3;&#x6309;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x5E38;&#x89C1;&#x5982;error&#xFF09;&#x67E5;&#x51FA;&#x73B0;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8BF7;&#x770B;&#x7F16;&#x8F91;&#x5668;&#x76F8;&#x5173;&#x7AE0;&#x8282;&#x5185;&#x5BB9;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="编辑器.html" class="navigation navigation-next " aria-label="Next page: 编辑器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"查询","level":"1.2","depth":1,"next":{"title":"编辑器","level":"1.3","depth":1,"path":"编辑器.md","ref":"编辑器.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","intopic-toc","-sharing","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":true},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"查询.md","mtime":"2021-11-06T14:07:29.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-06T14:08:54.498Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

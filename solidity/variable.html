@@ -1,0 +1,440 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>常量与变量声明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="operator.html" />
+    
+    
+    <link rel="prev" href="contract.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="contract.html">
+            
+                <a href="contract.html">
+            
+                    
+                    合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="variable.html">
+            
+                <a href="variable.html">
+            
+                    
+                    常量与变量声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="operator.html">
+            
+                <a href="operator.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="modifier.html">
+            
+                <a href="modifier.html">
+            
+                    
+                    修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="judege.md">
+            
+                <span>
+            
+                    
+                    条件判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="loop.html">
+            
+                <a href="loop.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >常量与变量声明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x53D8;&#x91CF;&#x58F0;&#x660E;">&#x53D8;&#x91CF;&#x58F0;&#x660E;</h1>
+<p>solidity&#x7684;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x975E;&#x5E38;&#x7B80;&#x5355;</p>
+<pre><code>&lt;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&gt; &lt;&#x53D8;&#x91CF;&#x540D;&gt;
+&lt;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&gt; &lt;&#x53D8;&#x91CF;&#x540D;&gt; = &lt;&#x503C;&gt; // &#x58F0;&#x660E;&#x540C;&#x65F6;&#x8D4B;&#x503C;
+</code></pre><p>solidity&#x7684;&#x53D8;&#x91CF;&#x628A;&#x5199;&#x5728;&#x51FD;&#x6570;&#x5916;&#x7684;&#x53D8;&#x91CF;&#x53EB;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#xFF0C;&#x6C38;&#x4E45;&#x5730;&#x50A8;&#x5B58;&#x5728;&#x5408;&#x7EA6;&#x91CC;&#x3002;</p>
+<h1 id="&#x53D8;&#x91CF;&#x7C7B;&#x578B;">&#x53D8;&#x91CF;&#x7C7B;&#x578B;</h1>
+<h2 id="&#x503C;&#x7C7B;&#x578B;">&#x503C;&#x7C7B;&#x578B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bool</td>
+<td>&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;solidity&#x4E2D;1&#x3001;0&#x4E0D;&#x80FD;&#x4EE3;&#x8868;true&#x3001;false</td>
+</tr>
+<tr>
+<td>int/uint</td>
+<td>&#x6574;&#x578B;&#xFF0C;int&#x548C;uint&#x9ED8;&#x8BA4;&#x90FD;&#x662F;256&#x3002;&#x8FD8;&#x6709;int8&#x3001;int16&#x3001;int24&#x3001;int32...int256&#x548C;uint8&#x3001;uint16&#x3001;uint24&#x3001;uint32...uint256</td>
+</tr>
+<tr>
+<td>address</td>
+<td>&#x5730;&#x5740;&#x7C7B;&#x578B;&#xFF0C;&#x957F;&#x5EA6;&#x4E3A;20B&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x5730;&#x5740;&#x662F;&#x7531;&#x79C1;&#x94A5;&#x7B97;&#x51FA;&#x516C;&#x94A5;&#xFF0C;&#x53D6;&#x516C;&#x94A5;&#x540E;40&#x4F4D;&#x4F5C;&#x4E3A;&#x5730;&#x5740;&#x3002;&#x524D;&#x9762;&#x4F1A;&#x52A0;0x,&#x6240;&#x4EE5;&#x6574;&#x4E2A;&#x5730;&#x5740;&#x5B57;&#x7B26;&#x4E32;&#x6709;42&#x4E2A;&#x5B57;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>&#x5B9A;&#x957F;&#x5B57;&#x8282;&#x6570;&#x5B57;&#xFF0C;&#x6709;byte1&#xFF0C;byte2&#xFF0C;byte3...byte32&#x3002;&#x53EF;&#x4EE5;&#x8BBE;&#x5B9A;16&#x8FDB;&#x5236;&#x6216;&#x6570;&#x5B57;&#x7684;&#x5B57;&#x9762;&#x91CF;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x5B9A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td>enum</td>
+<td>&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x662F;solidity&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+<pre><code>contract test{
+        // &#x679A;&#x4E3E;&#x7C7B;&#x578B;demo
+    enum Direction{east,south,west,north}
+    Direction choice;
+}
+</code></pre><h2 id="&#x5F15;&#x7528;&#x7C7B;&#x578B;">&#x5F15;&#x7528;&#x7C7B;&#x578B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bytes</td>
+<td>&#x4E0D;&#x5B9A;&#x957F;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#x662F;&#x4E2A;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#xFF0C;&#x80FD;&#x591F;&#x5BB9;&#x7EB3;&#x4EFB;&#x610F;&#x957F;&#x5EA6;&#x7684;&#x5B57;&#x8282;&#x3002;</td>
+</tr>
+<tr>
+<td>string</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>int[]&#x6216;uint[]</td>
+<td>&#x6570;&#x7EC4;&#xFF0C;&#x521B;&#x5EFA;&#x65F6;&#x9700;&#x8981;&#x5229;&#x7528;new&#x5173;&#x952E;&#x5B57;&#x3002;&#x9ED8;&#x8BA4;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;.length&#x4FEE;&#x6539;&#x957F;&#x5EA6;&#x7684;storage&#x6570;&#x5B57;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x6709;&#x5B9A;&#x957F;&#x7684;memory&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>struct</td>
+<td>&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x7EC4;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+<pre><code>contract test{
+    function f(){
+        uint[]memory a = new uint[](7);
+    }
+    uint[] b;
+    function g(){
+        b = new uint[](7);
+        b.length = 10;
+        b[9] = 100;
+    }
+
+}
+</code></pre><pre><code>contract test{
+    struct people{
+        address addr;
+        string name;
+    }
+}
+</code></pre><h2 id="&#x6570;&#x636E;&#x4F4D;&#x7F6E;">&#x6570;&#x636E;&#x4F4D;&#x7F6E;</h2>
+<p>&#x5408;&#x7EA6;&#x91CC;&#x58F0;&#x660E;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x5728;solidity 5.0&#x4EE5;&#x540E;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF08;bytes&#x3001;string&#x3001;int[]&#x3001;struct&#xFF09;&#x7684;&#x53C2;&#x6570;/&#x53D8;&#x91CF;/&#x8FD4;&#x56DE;&#x503C;&#x5728;&#x58F0;&#x660E;&#x7684;&#x65F6;&#x5019;&#x5FC5;&#x987B;&#x8981;&#x663E;&#x5F0F;&#x7684;&#x6DFB;&#x52A0;&#x201D;data location&#x201D;&#x7684;&#x58F0;&#x660E;&#xFF08;&#x4E13;&#x95E8;&#x5199;&#x5728;&#x540E;&#x9762;&#xFF09;&#x3002;</p>
+<p>&#x56DB;&#x79CD;data location:</p>
+<p>storage &#xFF1A;&#x6C38;&#x4E45;&#x7684;&#x5B58;&#x50A8;&#xFF0C;&#x5199;&#x5165;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#xFF08;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x3001;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#x9ED8;&#x8BA4;&#x662F;storage&#xFF09;</p>
+<p>memory&#xFF1A;&#x5728;&#x5408;&#x7EA6;&#x4E2D;&#x7684;&#x672C;&#x5730;&#x5185;&#x5B58;&#x53D8;&#x91CF;&#xFF0C;&#x751F;&#x547D;&#x5468;&#x671F;&#x5F88;&#x77ED;&#xFF0C;&#x51FD;&#x6570;&#x6267;&#x884C;&#x7ED3;&#x675F;&#x540E;&#x5C31;&#x9500;&#x6BC1;&#x3002;&#x4E0D;&#x4F1A;&#x88AB;&#x5199;&#x5165;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#x6301;&#x4E45;&#x5316; (&#x51FD;&#x6570;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x90FD;&#x7528;memory)</p>
+<p>calldata&#xFF1A;&#x6240;&#x6709;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x6570;&#x636E;&#xFF0C;&#x5305;&#x62EC;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x7684;&#x4FDD;&#x5B58;&#x4F4D;&#x7F6E;&#x3002;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x88AB;&#x5199;&#x5165;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#x6301;&#x4E45;&#x5316;&#xFF08;external &#x51FD;&#x6570;&#x7684;&#x5165;&#x53C2;&#x662F;&#x5F3A;&#x5236;&#x7684;calldata&#x7C7B;&#x578B;&#xFF09;</p>
+<p>stack&#xFF1A;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x6808;&#xFF0C;1024&#x7EA7;&#x6DF1;&#xFF0C;&#x8D85;&#x8FC7;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x5728;&#x58F0;&#x660E;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x4F4D;&#x7F6E;&#x65F6;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;stack</p>
+<font color="red">storge&#x6C38;&#x4E45;&#x4FDD;&#x5B58;&#x5408;&#x7EA6;&#x7684;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#xFF0C;&#x6D88;&#x8017;&#x71C3;&#x6599;&#x6700;&#x591A;&#x3002;memory&#x4EC5;&#x4FDD;&#x5B58;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x4E4B;&#x540E;&#x91CA;&#x653E;&#xFF0C;&#x6D88;&#x8017;&#x71C3;&#x6599;&#x5F88;&#x5C0F;&#x3002;calldata&#x5305;&#x542B;&#x6D88;&#x606F;&#x4F53;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5176;&#x8BA1;&#x7B97;&#x9700;&#x8981;n(&#x975E;&#x96F6;&#x5B57;&#x8282;&#x6570;)*68&#x7684;gas&#x8D39;&#x7528;&#x3002;stack&#x4EC5;&#x4FDD;&#x5B58;&#x5F88;&#x5C0F;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x514D;&#x8D39;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x6709;&#x6570;&#x91CF;&#x9650;&#x5236;&#xFF08;16&#x4E2A;&#x53D8;&#x91CF;&#xFF09;</font>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="contract.html" class="navigation navigation-prev " aria-label="Previous page: 合约">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="operator.html" class="navigation navigation-next " aria-label="Next page: 运算符">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"常量与变量声明","level":"1.3","depth":1,"next":{"title":"运算符","level":"1.4","depth":1,"path":"operator.md","ref":"operator.md","articles":[]},"previous":{"title":"合约","level":"1.2","depth":1,"path":"contract.md","ref":"contract.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","intopic-toc","-sharing","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":true},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"variable.md","mtime":"2021-11-06T14:07:29.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-06T14:09:09.476Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,421 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="contract.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="contract.html">
+            
+                <a href="contract.html">
+            
+                    
+                    合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="variable.html">
+            
+                <a href="variable.html">
+            
+                    
+                    常量与变量声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="operator.html">
+            
+                <a href="operator.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="modifier.html">
+            
+                <a href="modifier.html">
+            
+                    
+                    修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="judege.md">
+            
+                <span>
+            
+                    
+                    条件判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="loop.html">
+            
+                <a href="loop.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</h1>
+<p>Solidity&#x662F;&#x662F;&#x4E00;&#x6B3E;&#x57FA;&#x4E8E;&#x4EE5;&#x592A;&#x574A;&#x865A;&#x62DF;&#x673A; Ethereum Virtual Machine (EVM)&#x7684;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x7F16;&#x5199;&#x8BED;&#x8A00;&#x3002;&#x662F;&#x4E00;&#x79CD;&#x9759;&#x6001;&#x8BED;&#x8A00;&#xFF0C;&#x652F;&#x6301;&#x7EE7;&#x627F;&#x3001;&#x5E93;&#x3001;&#x590D;&#x6742;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
+<h1 id="solidity&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;">Solidity&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;</h1>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;solidity&#x5F00;&#x53D1;&#x7528;&#x7684;ide&#x90FD;&#x662F;web&#x7AEF;&#x7684;remix&#xFF0C;&#x76F4;&#x63A5;&#x7FFB;&#x5899;&#x7528;&#x5B98;&#x7F51;</p>
+<p>&#x6B64;&#x5916;&#x5C31;&#x662F;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;&#x5B89;&#x88C5;&#x4E2A;metamask&#x94B1;&#x5305;&#x63D2;&#x4EF6;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x90FD;&#x662F;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x914D;&#x7F6E;&#x7684;&#xFF1A;</p>
+<h2 id="nodejs&#x5B89;&#x88C5;">nodejs&#x5B89;&#x88C5;</h2>
+<pre><code>apt-get install curl -y
+
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+apt-get install -y nodejs
+</code></pre><p>&#x5982;&#x6B64;&#x5C31;&#x5B89;&#x88C5;&#x597D;&#x4E86;<code>nodejs</code>&#x548C;<code>npm</code></p>
+<p><code>setup_14.x</code>&#x4E2D;&#x7684;<code>14</code>&#x53EF;&#x6839;&#x636E;&#x5F53;&#x524D;nodejs LTS&#x7248;&#x672C;&#x66F4;&#x6362;&#x6210;&#x522B;&#x7684;</p>
+<h2 id="go&#x5B89;&#x88C5;">Go&#x5B89;&#x88C5;</h2>
+<pre><code>wget -c https://golang.org/dl/go1.16.5.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+vim  /etc/profile
+export PATH=$PATH:/usr/local/go/bin #&#x5199;&#x5165;&#x5230;/etc/profile&#x9996;&#x884C;
+source /etc/profile
+</code></pre><h2 id="git&#x5B89;&#x88C5;">git&#x5B89;&#x88C5;</h2>
+<pre><code>apt-get install git -y
+</code></pre><h2 id="&#x4EE5;&#x592A;&#x574A;&#x6E90;&#x7801;&#xFF08;geth&#xFF09;&#x7F16;&#x8BD1;">&#x4EE5;&#x592A;&#x574A;&#x6E90;&#x7801;&#xFF08;geth&#xFF09;&#x7F16;&#x8BD1;</h2>
+<pre><code>mkdir geth
+cd geth
+git init
+git remote add origin https://github.com/ethereum/go-ethereum
+git pull origin master
+apt-get install make
+make geth
+</code></pre><p>&#x7F16;&#x8BD1;&#x597D;&#x4E4B;&#x540E;&#x4F1A;&#x6709;<code>Run &quot;./build/bin/geth&quot; to launch geth.</code>&#x7684;&#x8BF4;&#x660E;</p>
+<h2 id="web3js&#x5305;">web3.js&#x5305;</h2>
+<p><code>web3</code>&#x5E93;&#x662F;&#x4F7F;&#x7528;&#x6700;&#x5E7F;&#x6CDB;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5F00;&#x53D1;&#x7A0B;&#x5E8F;&#x5305;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;<code>npm</code>&#x6765;&#x5B89;&#x88C5;</p>
+<pre><code>npm install web3 -g
+</code></pre><h2 id="ganache&#x5B89;&#x88C5;">ganache&#x5B89;&#x88C5;</h2>
+<p>ganache&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x8D26;&#x53F7;&#x548C;&#x79C1;&#x94A5;&#xFF0C;&#x5176;&#x5B9E;&#x6211;&#x611F;&#x89C9;&#x88C5;&#x4E0D;&#x88C5;&#x90FD;&#x6CA1;&#x5565;&#x95EE;&#x9898;</p>
+<pre><code>npm install -g ganache-cli
+</code></pre><h2 id="truffle&#x5B89;&#x88C5;">truffle&#x5B89;&#x88C5;</h2>
+<p>Truffle&#x662F;&#x4E00;&#x4E2A;&#x4F18;&#x79C0;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF0C;&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#x3001;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x901A;&#x9053;&#x3002;</p>
+<pre><code>npm install -g truffle
+</code></pre><pre><code>mkdir test &amp;&amp; cd test
+
+truffle init
+
+tree
+
+.
+
+&#x251C;&#x2500;&#x2500; contracts
+
+&#x2502;  &#x2514;&#x2500;&#x2500; Migrations.sol
+
+&#x251C;&#x2500;&#x2500; migrations
+
+&#x2502;  &#x2514;&#x2500;&#x2500; 1_initial_migration.js
+
+&#x251C;&#x2500;&#x2500; test
+
+&#x2514;&#x2500;&#x2500; truffle-config.js
+</code></pre><p>contracts solidity&#x5408;&#x7EA6;&#x76EE;&#x5F55;</p>
+<p>migrations &#x53EF;&#x7F16;&#x7A0B;&#x90E8;&#x7F72;&#x811A;&#x672C;&#x6587;&#x4EF6;</p>
+<p>test &#x7528;&#x6765;&#x6D4B;&#x8BD5;App&#x548C;&#x5408;&#x7EA6;&#x7684;&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;&#x76EE;&#x5F55;</p>
+<p>truffle-config.js truffle&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<h2 id="solc&#x547D;&#x4EE4;&#x884C;&#x7F16;&#x8BD1;&#x5668;">solc&#x547D;&#x4EE4;&#x884C;&#x7F16;&#x8BD1;&#x5668;</h2>
+<pre><code>npm install -g solc
+npm install -g solc-cli
+</code></pre><h1 id="sol&#x6587;&#x4EF6;&#x7ED3;&#x6784;">sol&#x6587;&#x4EF6;&#x7ED3;&#x6784;</h1>
+<h2 id="1&#x7F16;&#x8BD1;&#x5F00;&#x5173;">1.&#x7F16;&#x8BD1;&#x5F00;&#x5173;</h2>
+<pre><code>paragma solidity ^0.4.0
+</code></pre><p>&#x7F16;&#x8BD1;&#x5F00;&#x5173;&#xFF0C;&#x8868;&#x660E;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x5668;&#x9AD8;&#x4E8E;0.4.0&#x7248;&#x672C;&#x624D;&#x53EF;&#x4EE5;&#x7F16;&#x8BD1;,<code>^</code>&#x8868;&#x793A;&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x5668;&#x7248;&#x672C;&#x4F4E;&#x4E8E;<code>0.4.0</code>&#x5219;&#x4E0D;&#x53EF;&#x7F16;&#x8BD1;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x7248;&#x672C;&#x8303;&#x56F4;</p>
+<pre><code>paragma solidity &gt;=0.4.22 &lt;0.6.0
+</code></pre><h2 id="2&#x5F15;&#x5165;&#x5176;&#x4ED6;&#x6E90;&#x6587;&#x4EF6;">2.&#x5F15;&#x5165;&#x5176;&#x4ED6;&#x6E90;&#x6587;&#x4EF6;</h2>
+<p>&#x5168;&#x5C40;&#x5F15;&#x5165;</p>
+<pre><code>import &quot;&lt;filename&gt;&quot;
+</code></pre><p>&#x81EA;&#x5B9A;&#x4E49;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x5F15;&#x5165;</p>
+<pre><code>import * as &lt;&#x81EA;&#x5B9A;&#x4E49;&#x540D;&gt; &quot;&lt;filename&gt;&quot;
+</code></pre><h2 id="3&#x6CE8;&#x91CA;">3.&#x6CE8;&#x91CA;</h2>
+<pre><code>// &#x5355;&#x884C;&#x6CE8;&#x91CA;
+
+/*
+&#x8FD9;&#x662F;
+&#x591A;&#x884C;&#x6CE8;&#x91CA;
+*/
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="contract.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 合约">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"合约","level":"1.2","depth":1,"path":"contract.md","ref":"contract.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","intopic-toc","-sharing","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":true},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"README.md","mtime":"2021-11-06T14:07:29.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-06T14:09:09.476Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

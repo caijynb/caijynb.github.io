@@ -1,0 +1,314 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>概念 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="network.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="concept.html">
+            
+                <a href="concept.html">
+            
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                    k8s网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="kubectl.html">
+            
+                <a href="kubectl.html">
+            
+                    
+                    kubecrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >概念</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="namespace">namespace</h2>
+<p>&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF08;namespace&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x4E4B;&#x95F4;&#x5212;&#x5206;&#x96C6;&#x7FA4;&#x8D44;&#x6E90;&#x3002;&#x5F62;&#x6210;&#x903B;&#x8F91;&#x4E0A;&#x5206;&#x7EC4;&#x7684;&#x4E0D;&#x540C;&#x9879;&#x76EE;&#x3001;&#x7528;&#x6237;&#x7EC4;&#x3002;</p>
+<h2 id="node">node</h2>
+<p>node&#x3001;&#x8282;&#x70B9;&#xFF0C;&#x5373;&#x72EC;&#x7ACB;&#x7684;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4F1A;&#x88AB;master&#x5206;&#x914D;&#x4E00;&#x4E9B;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#xFF0C;&#x5F53;&#x8282;&#x70B9;&#x5B95;&#x673A;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x4F1A;&#x88AB;master&#x81EA;&#x52A8;&#x8F6C;&#x79FB;&#x5230;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x4E0A;&#x3002;</p>
+<h2 id="master">master</h2>
+<p>master&#x662F;&#x96C6;&#x7FA4;&#x63A7;&#x5236;&#x7BA1;&#x7406;&#x7684;&#x8282;&#x70B9;&#xFF0C;k8s&#x96C6;&#x7FA4;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;mastrt&#x6765;&#x8D1F;&#x8D23;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x7684;&#x7BA1;&#x7406;&#x548C;&#x63A7;&#x5236;&#xFF0C;&#x6240;&#x6709;&#x7684;kubernetes&#x63A7;&#x5236;&#x547D;&#x4EE4;&#x90FD;&#x662F;&#x53D1;&#x7ED9;master&#xFF0C;&#x7531;&#x5B83;&#x6765;&#x8D1F;&#x8D23;&#x5177;&#x4F53;&#x7684;&#x6267;&#x884C;</p>
+<h2 id="pod">pod</h2>
+<p>pod&#x662F;&#x8FD0;&#x884C;&#x5728;&#x8282;&#x70B9;&#x4E0A;&#x7684;&#x4E00;&#x7EC4;&#xFF08;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#xFF09;&#x5BB9;&#x5668;&#x3002;&#x8FD9;&#x4E9B;&#x5BB9;&#x5668;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x3001;&#x7F51;&#x7EDC;&#x3001;&#x4EE5;&#x53CA;&#x600E;&#x6837;&#x8FD0;&#x884C;&#x8FD9;&#x4E9B;&#x5BB9;&#x5668;&#x7684;&#x58F0;&#x660E;&#x3002;</p>
+<h2 id="deployment">deployment</h2>
+<p>&#x600E;&#x6837;&#x8FD0;&#x884C;&#x8FD9;&#x4E9B;&#x5BB9;&#x5668;&#x7684;&#x58F0;&#x660E;&#xFF0C;&#x5C31;&#x662F;deployment&#x4E86;&#x3002;deployment&#x7528;&#x4E8E;&#x5728;&#x8282;&#x70B9;&#x4E0A;&#x7F16;&#x6392;pod&#xFF0C;&#x901A;&#x8FC7;&#x521B;&#x5EFA;deployment&#x6765;&#x5B8C;&#x6210;&#x5BF9;pod&#x7684;&#x521B;&#x5EFA;&#x3002;</p>
+<h2 id="statefulset">statefulset</h2>
+<p>statefulset&#x540C;deployment &#x4E00;&#x6837;&#xFF0C;&#x662F;pod&#x7684;&#x7BA1;&#x7406;&#x5BF9;&#x8C61;&#x3002;&#x533A;&#x522B;&#x5728;&#x4E8E;deployment&#x7BA1;&#x7406;&#x7684;pod&#xFF0C;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x65E0;&#x72B6;&#x6001;&#x7684;&#x670D;&#x52A1;&#x3002;&#x4F46;&#x662F;&#x4E00;&#x4E9B;&#x670D;&#x52A1;&#x662F;&#x6709;&#x72B6;&#x6001;&#x7684;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x4E00;&#x4E9B;&#x590D;&#x6742;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;mysql&#x3001;MongoDB&#x3001;zookeeper&#x3001;reddis&#x3002;</p>
+<p>&#x6709;&#x72B6;&#x6001;&#x7684;&#x670D;&#x52A1;&#x96C6;&#x7FA4;&#x8981;&#x6C42;&#x90E8;&#x7F72;&#x7684;&#x8282;&#x70B9;&#x6709;&#x56FA;&#x5B9A;&#x7684;&#x8EAB;&#x4EFD;id&#xFF0C;&#x8FD9;&#x6837;&#x4FBF;&#x4E8E;&#x96C6;&#x7FA4;&#x6210;&#x5458;&#x53BB;&#x53D1;&#x73B0;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x3002;&#x6B64;&#x5916;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x505A;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;</p>
+<p>&#x901A;&#x8FC7;deployment&#x63A7;&#x5236;pod&#x526F;&#x672C;&#xFF0C;pod&#x7684;&#x540D;&#x79F0;&#x662F;&#x968F;&#x673A;&#x7684;&#x3001;ip&#x5730;&#x5740;&#x4E5F;&#x662F;&#x8FD0;&#x884C;&#x671F;&#x624D;&#x5206;&#x914D;&#x7684;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x5F15;&#x5165;&#x4E86;statefulset&#x8FD9;&#x4E2A;&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#x3002;statefulset&#x91CC;&#x7684;pod&#x90FD;&#x6709;&#x56FA;&#x5B9A;&#x3001;&#x552F;&#x4E00;&#x7684;&#x7F51;&#x7EDC;&#x6807;&#x793A;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x53D1;&#x73B0;&#x96C6;&#x7FA4;&#x5185;&#x7684;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x3002;statefulset&#x91CC;&#x7684;pod&#x91C7;&#x7528;&#x7A33;&#x5B9A;&#x7684;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x5377;&#xFF0C;&#x901A;&#x8FC7;PV&#x6216;PVC&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x5220;&#x9664;POD&#x65F6;&#x9ED8;&#x8BA4;&#x4E0D;&#x4F1A;&#x5220;&#x9664;&#x4E0E;stateful&#x76F8;&#x5173;&#x7684;&#x5B58;&#x50A8;&#x5377;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cjyshow/docimg@main/deployment%E5%92%8Cstatefulset.png" alt=""></p>
+<h2 id="volume">Volume</h2>
+<p>&#x5B58;&#x50A8;&#x5377;&#xFF0C;&#x662F;Pod&#x4E2D;&#x80FD;&#x591F;&#x88AB;&#x591A;&#x4E2A;&#x5BB9;&#x5668;&#x8BBF;&#x95EE;&#x7684;&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x3002;Kubernetes&#x7684;Volume&#x6982;&#x5FF5;&#x3001;&#x7528;&#x9014;&#x548C;&#x76EE;&#x7684;&#x4E0E;Docker&#x7684;Volume&#x6BD4;&#x8F83;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x4E24;&#x8005;&#x4E0D;&#x80FD;&#x7B49;&#x4EF7;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;Kubernetes&#x4E2D;&#x7684;Volume&#x88AB;&#x5B9A;&#x4E49;&#x5728;Pod&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x88AB;&#x4E00;&#x4E2A;Pod&#x91CC;&#x7684;&#x591A;&#x4E2A;&#x5BB9;&#x5668;&#x6302;&#x8F7D;&#x5230;&#x5177;&#x4F53;&#x7684;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x4E0B;&#xFF1B;&#x5176;&#x6B21;&#xFF0C;Kubernetes&#x4E2D;&#x7684;Volume&#x4E0E;Pod&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x4E0E;&#x5BB9;&#x5668;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E0D;&#x76F8;&#x5173;&#xFF0C;&#x5BB9;&#x5668;&#x7EC8;&#x6B62;&#x6216;&#x8005;&#x91CD;&#x542F;&#x65F6;&#xFF0C;Volume&#x4E2D;&#x7684;&#x6570;&#x636E;&#x4E5F;&#x4E0D;&#x4F1A;&#x4E22;&#x5931;&#x3002;</p>
+<h2 id="persistent-volume">Persistent Volume</h2>
+<p>Volume&#x662F;&#x88AB;&#x5B9A;&#x4E49;&#x5728;Pod&#x4E0A;&#x7684;&#xFF0C;&#x5C5E;&#x4E8E;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<p>Persistent Volume&#x662F;&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#xFF0C;&#x662F;&#x76F8;&#x5BF9;&#x72EC;&#x7ACB;&#x4E8E;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#x800C;&#x5B58;&#x5728;&#x7684;&#x4E00;&#x79CD;&#x5B9E;&#x4F53;&#x8D44;&#x6E90;&#x3002;</p>
+<p>PV&#x53EF;&#x4EE5;&#x88AB;&#x7406;&#x89E3;&#x6210;Kubernetes&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x5BF9;&#x5E94;&#x7684;&#x4E00;&#x5757;&#x5B58;&#x50A8;&#x3002;&#x4E0D;&#x5C5E;&#x4E8E;&#x4EFB;&#x4F55;&#x7684;Node&#xFF0C;&#x4E0D;&#x88AB;Pod&#x5B9A;&#x4E49;&#xFF0C;&#x4F46;&#x6BCF;&#x4E2A;Node&#x548C;Pod&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;</p>
+<h2 id="configmap">ConfigMap</h2>
+<p>ConifgMap&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x9700;&#x8981;&#x4ECE;docker&#x8BF4;&#x8D77;</p>
+<p>Docker&#x901A;&#x8FC7;&#x5C06;&#x7A0B;&#x5E8F;&#x3001;&#x4F9D;&#x8D56;&#x5E93;&#x3001;&#x6570;&#x636E;&#x53CA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x201C;&#x6253;&#x5305;&#x56FA;&#x5316;&#x201D;&#x5230;&#x4E00;&#x4E2A;&#x4E0D;&#x53D8;&#x7684;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x89E3;&#x51B3;&#x4E86;&#x5E94;&#x7528;&#x7684;&#x90E8;&#x7F72;&#x7684;&#x96BE;&#x9898;&#xFF0C;&#x4F46;&#x8FD9;&#x540C;&#x6837;&#x5E26;&#x6765;&#x4E86;&#x95EE;&#x9898;&#xFF1A;&#x5373;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x5728;&#x8FD0;&#x884C;&#x671F;&#x5982;&#x4F55;&#x4FEE;&#x6539;&#x7684;&#x95EE;&#x9898;&#x3002;docker&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ul>
+<li><p>&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x901A;&#x8FC7;&#x5BB9;&#x5668;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6765;&#x4F20;&#x9012;&#x53C2;&#x6570;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;Docker Volume&#x5C06;&#x5BB9;&#x5668;&#x5916;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x5185;</p>
+</li>
+</ul>
+<p>&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x8FD0;&#x884C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x90FD;&#x4E0D;&#x5408;&#x9002;&#x3002;&#x56E0;&#x4E3A;&#x5728;&#x591A;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4FEE;&#x6539;&#x5176;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#x591A;&#x4E2A;&#x670D;&#x52A1;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5B9E;&#x5728;&#x662F;&#x592A;&#x9EBB;&#x70E6;&#x4E86;...</p>
+<p>ConfigMap&#x63D0;&#x4F9B;&#x4E86;&#x96C6;&#x4E2D;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x90FD;&#x662F;&#x952E;&#x503C;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x9879;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;Map&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9879;&#xFF0C;&#x6574;&#x4E2A;Map&#x7684;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x88AB;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x5728;k8s&#x7684;Etcd&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x63D0;&#x4F9B;API&#x4EE5;&#x65B9;&#x4FBF;k8s&#x76F8;&#x5173;&#x7EC4;&#x4EF6;&#x6216;&#x5BA2;&#x6237;&#x5E94;&#x7528;CRUD&#x64CD;&#x4F5C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x3002;k8s&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5185;&#x5EFA;&#x673A;&#x5236;&#xFF0C;&#x5C06;&#x5B58;&#x50A8;&#x5728;etcd&#x4E2D;&#x7684;ConfigMap&#x901A;&#x8FC7;Volume&#x6620;&#x5C04;&#x7684;&#x65B9;&#x5F0F;&#x53D8;&#x6210;&#x76EE;&#x6807;Pod&#x5185;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;ConfigMap&#x4E2D;&#x7684;key-value&#x6570;&#x636E;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x5219;&#x6620;&#x5C04;&#x5230;Pod&#x4E2D;&#x7684;&#x201C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x201D;&#x4E5F;&#x4F1A;&#x968F;&#x4E4B;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 前言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="network.html" class="navigation navigation-next " aria-label="Next page: k8s网络">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"概念","level":"1.2","depth":1,"next":{"title":"k8s网络","level":"1.3","depth":1,"path":"network.md","ref":"network.md","articles":[]},"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","intopic-toc","-sharing","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":true},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"concept.md","mtime":"2021-11-06T14:07:29.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-06T14:08:49.489Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
