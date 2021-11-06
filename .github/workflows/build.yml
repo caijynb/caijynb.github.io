@@ -1,0 +1,33 @@
+name: build doc site
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup Node.js 10 
+        uses: actions/setup-node@v2
+        with:
+          node-version: '10.15'
+      - name: Install gitbook-cli
+        run: npm install -g gitbook-cli
+      - name: run build.sh
+        run: bash build.sh
+
+      - name: git push view branch
+        run: |
+          git config --global user.name "caijynb"
+          git config --global user.email "1332794849@qq.com"
+          git init
+          git checkout -b view
+          git rm -f build.sh
+          git rm -rf src
+          git rm -rf .github
+          git add *
+          git commit -m "github action update $(date)"
+          git push -u origin view -f
