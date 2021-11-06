@@ -6,6 +6,7 @@ for file in $files
 do
   cd "$srcpath/$file"
   cp "$rootpath/book.json" book.json
+  gitbook install
   gitbook build
   mv _book "$rootpath/${file}"
   echo "-----${file}文档编译部署成功-----"
