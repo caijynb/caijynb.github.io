@@ -1,0 +1,11 @@
+{
+    "language": "zh-hans",
+    "plugins": [
+        "code",
+        "intopic-toc",
+        "-sharing",
+        "-lunr",
+        "-search",
+        "search-pro"
+    ]
+}

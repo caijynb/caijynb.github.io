@@ -26,6 +26,7 @@ jobs:
           git init
           git checkout -b view
           git rm -f build.sh
+          git rm -f book.json
           git rm -rf src
           git rm -rf .github
           git add *
